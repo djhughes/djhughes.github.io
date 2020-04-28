@@ -8,6 +8,8 @@
 </head>
 
 <body>
-  <a href="javascript:(function()%7Bdocument.querySelectorAll('td%5Bheaders~%3D%22d1Temp%22%5D%20%3E%20div%5Bdata-value%5D').forEach(d%20%3D%3E%20d.innerHTML%3Dd.getAttribute('data-value'))%7D)()">Drag Me</a>
+  <!-- document.querySelectorAll('td[data-temp] > div[data-value]').forEach(d => d.innerHTML=d.getAttribute('data-value')); -->
+  <!-- use https://mrcoles.com/bookmarklet/ to escape -->
+  <a href="javascript:(function()%7Bdocument.querySelectorAll('td%5Bdata-temp%5D%20%3E%20div%5Bdata-value%5D').forEach(d%20%3D%3E%20d.innerHTML%3Dd.getAttribute('data-value'))%7D)()">MET Office: Increase Precision</a>
 </body>
 </html>
